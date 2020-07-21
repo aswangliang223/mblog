@@ -35,6 +35,7 @@
 
 - 文档: [说明文档](https://langhsu.github.io/mblog/#/)
 - 官网: [官网地址](http://www.mtons.com)
+- 模板使用: [官网地址](https://cuiweiboy.github.io/#/)
 - QQ交流群：378433412
     
 ### 版本(3.5)更新内容：
