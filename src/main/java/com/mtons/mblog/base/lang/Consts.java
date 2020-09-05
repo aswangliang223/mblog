@@ -22,7 +22,7 @@ public interface Consts {
 	/**
 	 * 默认头像
 	 */
-	String AVATAR = "https://en.gravatar.com/userimage/154673030/b9a54b5b990a61cc074668b2e2a0b8c0.png";
+	String AVATAR = "http://47.102.202.221/images/u%3D3315455031%2C784134284%26fm%3D26%26gp%3D0.jpg";
 	
 	/**
 	 * 分隔符

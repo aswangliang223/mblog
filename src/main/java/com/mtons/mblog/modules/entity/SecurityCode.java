@@ -9,6 +9,8 @@
 */
 package com.mtons.mblog.modules.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -18,6 +20,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "mto_security_code")
+@Data
 public class SecurityCode {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -66,69 +69,5 @@ public class SecurityCode {
      */
     @Column
     private int status;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getTarget() {
-        return target;
-    }
-
-    public void setTarget(String target) {
-        this.target = target;
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    public Date getExpired() {
-        return expired;
-    }
-
-    public void setExpired(Date expired) {
-        this.expired = expired;
-    }
-
-    public Date getCreated() {
-        return created;
-    }
-
-    public void setCreated(Date created) {
-        this.created = created;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
 
 }

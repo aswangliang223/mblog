@@ -4,8 +4,8 @@
 
 一、QQ登录
 - 回调地址: http://{domain}/oauth/callback/qq
-- APP ID：
-- APP KEY
+- APP ID：1110969866
+- APP KEY: Z2SX5BuyOQulVNvz
 
 QQ互联侧：
 网站回调域: http://{domain}/oauth/callback/qq

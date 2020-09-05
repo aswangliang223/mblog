@@ -1,5 +1,7 @@
 package com.mtons.mblog.modules.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /**
@@ -10,6 +12,7 @@ import javax.persistence.*;
 @Table(name = "mto_post_tag", indexes = {
         @Index(name = "IK_TAG_ID", columnList = "tag_id")
 })
+@Data
 public class PostTag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,36 +25,4 @@ public class PostTag {
     private long tagId;
 
     private long weight;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public long getPostId() {
-        return postId;
-    }
-
-    public void setPostId(long postId) {
-        this.postId = postId;
-    }
-
-    public long getTagId() {
-        return tagId;
-    }
-
-    public void setTagId(long tagId) {
-        this.tagId = tagId;
-    }
-
-    public long getWeight() {
-        return weight;
-    }
-
-    public void setWeight(long weight) {
-        this.weight = weight;
-    }
 }

@@ -9,6 +9,8 @@
 */
 package com.mtons.mblog.modules.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /**
@@ -18,6 +20,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "mto_user_oauth")
+@Data
 public class UserOauth {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,68 +61,4 @@ public class UserOauth {
 
     @Column(name = "refresh_token", length = 128)
     private String refreshToken;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(long userId) {
-        this.userId = userId;
-    }
-
-    public int getOauthType() {
-        return oauthType;
-    }
-
-    public void setOauthType(int oauthType) {
-        this.oauthType = oauthType;
-    }
-
-    public String getOauthUserId() {
-        return oauthUserId;
-    }
-
-    public void setOauthUserId(String oauthUserId) {
-        this.oauthUserId = oauthUserId;
-    }
-
-    public String getOauthCode() {
-        return oauthCode;
-    }
-
-    public void setOauthCode(String oauthCode) {
-        this.oauthCode = oauthCode;
-    }
-
-    public String getAccessToken() {
-        return accessToken;
-    }
-
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
-    }
-
-    public String getExpireIn() {
-        return expireIn;
-    }
-
-    public void setExpireIn(String expireIn) {
-        this.expireIn = expireIn;
-    }
-
-    public String getRefreshToken() {
-        return refreshToken;
-    }
-
-    public void setRefreshToken(String refreshToken) {
-        this.refreshToken = refreshToken;
-    }
 }
