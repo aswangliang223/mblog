@@ -43,7 +43,7 @@ public class OauthQQ extends Oauth {
         if (StringUtils.isNotBlank(state)) {
             params.put("state", state);
         }
-        return super.getAuthorizeUrl("https://graph.qq.com/oauth2.0/authorize", params);
+        return super.getAuthorizeUrl(AUTH_URL, params);
     }
 
     public String getTokenByCode(String code) throws IOException, KeyManagementException, NoSuchAlgorithmException, NoSuchProviderException {
@@ -54,7 +54,7 @@ public class OauthQQ extends Oauth {
         params.put("grant_type", "authorization_code");
         params.put("redirect_uri", getRedirectUri());
 
-        String token = TokenUtil.getAccessToken(super.doGet("https://graph.qq.com/oauth2.0/token", params));
+        String token = TokenUtil.getAccessToken(super.doGet(TOKEN_URL, params));
         LOGGER.debug(token);
         return token;
     }
@@ -63,7 +63,7 @@ public class OauthQQ extends Oauth {
         Map<String, String> params = new HashMap();
         params.put("access_token", accessToken);
 
-        String openid = TokenUtil.getOpenId(super.doGet("https://graph.qq.com/oauth2.0/me", params));
+        String openid = TokenUtil.getOpenId(super.doGet(TOKEN_INFO_URL, params));
         LOGGER.debug(openid);
         return openid;
     }
@@ -75,7 +75,7 @@ public class OauthQQ extends Oauth {
         params.put("openid", uid);
         params.put("format", "json");
 
-        String userinfo = super.doGet("https://graph.qq.com/user/get_user_info", params);
+        String userinfo = super.doGet(USER_INFO_URL, params);
         LOGGER.debug(userinfo);
         return userinfo;
     }
