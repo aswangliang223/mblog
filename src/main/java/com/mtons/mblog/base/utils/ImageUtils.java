@@ -15,7 +15,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * @author langhsu on 2019/1/20.
+ * @author wangliang
  * @since 3.0
  */
 @Slf4j

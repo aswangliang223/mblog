@@ -19,9 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author : langhsu
- * @version : 1.0
- * @date : 2019/01/18
+ * @author : wangliang
  */
 @Configuration
 @ConfigurationProperties(prefix = "site")

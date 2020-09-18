@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @author : langhsu
+ * @author : wangliang
  * @since 3.0
  */
 @Configuration

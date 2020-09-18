@@ -10,8 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author - langhsu
- * @create - 2018/3/9
+ * @author - wangliang
  */
 public class FileKit {
     // 文件允许格式

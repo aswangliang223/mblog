@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * Zip utility
- * @author : landy
+ * @author : wangliang
  */
 @Slf4j
 public class ZipUtils {

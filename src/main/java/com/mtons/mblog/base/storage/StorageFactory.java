@@ -25,8 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * created by langhsu
- * on 2019/1/21
+ * created by wanglaing
  */
 @Component
 public class StorageFactory implements InitializingBean {

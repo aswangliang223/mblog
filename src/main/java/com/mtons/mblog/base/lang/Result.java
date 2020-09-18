@@ -15,7 +15,7 @@ import java.io.Serializable;
 
 /**
  * 消息对象
- * @author langhsu
+ * @author wangliang
  */
 @Data
 public class Result<T> implements Serializable {

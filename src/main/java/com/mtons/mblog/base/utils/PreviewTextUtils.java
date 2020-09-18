@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by langhsu
+ * Created by wangliang
  */
 public class PreviewTextUtils {
     /**
